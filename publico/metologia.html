@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>METODOLOGIA | SMART CONSULT</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">SMART<span>CONSULT</span></div>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/sobre">Sobre</a></li>
+        <li><a href="/metodologia">Metodologia</a></li>
+        <li><a href="/servicos">Serviços</a></li>
+      </ul>
+    </nav>
+
+    <section class="container" style="padding-top: 180px">
+      <h4 class="tagline" data-aos="fade-down">O SISTEMA</h4>
+      <h1 data-aos="zoom-in">COMO <span>FUNCIONA</span></h1>
+      <p data-aos="fade-up">
+        Baseamos nosso trabalho em 3 pilares indestrutíveis para garantir que
+        você não perca tempo na academia.
+      </p>
+    </section>
+
+    <section class="container">
+      <div
+        class="grid"
+        style="
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 40px;
+        "
+      >
+        <div class="card" data-aos="fade-up">
+          <h3 style="color: var(--turquesa)">01. ANÁLISE</h3>
+          <p>
+            Analisamos seu histórico, biotipo e rotina. Não existe treino "copia
+            e cola" aqui.
+          </p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+          <h3 style="color: var(--rosa)">02. AJUSTE</h3>
+          <p>
+            Feedback semanal. Se o progresso estagnar, nós mudamos a estratégia
+            na hora.
+          </p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="400">
+          <h3 style="color: var(--amarelo)">03. TOPO</h3>
+          <p>
+            Consolidação de resultados. Transformamos seu corpo em uma máquina
+            de queimar gordura.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/scripts.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

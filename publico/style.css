@@ -1,0 +1,506 @@
+/* --- VARIÁVEIS DE COR (PADRÃO SMART) --- */
+:root {
+  --amarelo: #f5ff00;
+  --rosa: #ff0055;
+  --turquesa: #00ffcc;
+  --preto-deep: #050505;
+  --cinza-card: #121212;
+  --branco: #ffffff;
+}
+
+/* --- RESET E GERAL --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--preto-deep);
+  color: var(--branco);
+  overflow-x: hidden;
+}
+
+/* --- NAVBAR (EFEITO VIDRO) --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 7%;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(15px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+.logo span {
+  color: var(--amarelo);
+  text-shadow: 0 0 10px rgba(245, 255, 0, 0.5);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.nav-links a {
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--amarelo);
+}
+
+/* --- HERO SECTION (BANNER PRINCIPAL) --- */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), var(--preto-deep)),
+    url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Efeito Parallax */
+}
+
+.tagline {
+  color: var(--amarelo);
+  font-weight: 900;
+  letter-spacing: 6px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+h1 {
+  font-size: clamp(3.5rem, 10vw, 7rem) !important;
+  font-weight: 900;
+  line-height: 0.9;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+h1 span {
+  color: var(--amarelo);
+  -webkit-text-stroke: 1px var(--amarelo);
+  background: transparent;
+  color: transparent; /* Efeito Letra Vazada */
+  transition: 0.5s;
+}
+
+h1:hover span {
+  color: var(--amarelo);
+  text-shadow: 0 0 20px var(--amarelo);
+}
+
+/* --- CONTAINER E GRIDS --- */
+.container {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+h2 span {
+  color: var(--turquesa);
+}
+
+/* --- CARDS DE DIFERENCIAIS --- */
+.card {
+  background: var(--cinza-card);
+  padding: 50px 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: var(--amarelo);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card h3 {
+  font-size: 2rem;
+  color: var(--amarelo);
+  margin-bottom: 15px;
+  font-weight: 900;
+}
+
+p {
+  font-size: 1.3rem !important;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* --- BOTÕES --- */
+.btn-main {
+  padding: 18px 40px;
+  background: var(--amarelo);
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  display: inline-block;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-main:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--amarelo);
+}
+
+.btn-nav {
+  background: var(--rosa);
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+  .nav-links {
+    display: none;
+  } /* Oculta menu no mobile para simplificar */
+  h1 {
+    font-size: 3rem !important;
+  }
+}
+/* --- VARIÁVEIS DE COR --- */
+:root {
+  --amarelo: #f5ff00;
+  --rosa: #ff0055;
+  --turquesa: #00ffcc;
+  --preto-deep: #050505;
+  --cinza-card: #121212;
+  --branco: #ffffff;
+}
+
+/* --- RESET E GERAL --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: var(--preto-deep);
+  color: var(--branco);
+  overflow-x: hidden;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 7%;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(15px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 900;
+}
+.logo span {
+  color: var(--amarelo);
+  text-shadow: 0 0 10px var(--amarelo);
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.nav-links a {
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.nav-links a:hover {
+  color: var(--amarelo);
+}
+
+/* --- COMPONENTES GIGANTES (INDEX & PLANOS) --- */
+.container {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: clamp(4rem, 12vw, 8rem) !important;
+  font-weight: 900;
+  line-height: 0.85;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+h1 span {
+  color: var(--amarelo);
+}
+
+h2 {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+h2 span {
+  color: var(--turquesa);
+}
+
+p {
+  font-size: 1.5rem !important;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* --- ESTILO ESPECÍFICO DOS CARDS DE PLANOS --- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  align-items: center;
+}
+
+.card {
+  background: var(--cinza-card);
+  padding: 60px 40px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-align: center;
+}
+
+/* Efeito Hover nos Planos */
+.card:hover {
+  transform: translateY(-15px);
+  border-color: var(--turquesa);
+  box-shadow: 0 20px 40px rgba(0, 255, 204, 0.1);
+}
+
+/* Destaque para o Plano ELITE (Rosa) */
+.card.highlight:hover {
+  border-color: var(--rosa);
+  box-shadow: 0 0 50px rgba(255, 0, 85, 0.3);
+}
+
+/* Letras Gigantes nos Preços */
+.price span {
+  font-size: 7rem !important; /* Preço massivo */
+  font-weight: 900;
+  line-height: 1;
+  display: block;
+  margin: 10px 0;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Cores dos Preços */
+.card:nth-child(1) .price span {
+  color: var(--turquesa);
+}
+.card.highlight .price span {
+  color: var(--rosa);
+}
+.card:nth-child(3) .price span {
+  color: var(--amarelo);
+}
+
+/* Listas de Benefícios */
+ul {
+  list-style: none;
+  margin: 30px 0;
+  text-align: left;
+}
+ul li {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #eee;
+  font-weight: 600;
+}
+
+/* --- BOTÕES --- */
+.btn-main {
+  width: 100%;
+  padding: 22px;
+  background: var(--amarelo);
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  display: inline-block;
+  transition: 0.3s;
+  border: none;
+  text-transform: uppercase;
+}
+
+.btn-main:hover {
+  transform: scale(1.02);
+  filter: brightness(1.1);
+}
+
+.btn-nav {
+  background: var(--rosa);
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Tagline Amarela */
+.tagline {
+  color: var(--amarelo);
+  font-weight: 900;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  display: block;
+}
+/* --- EDIÇÃO EXTRA PARA SERVIÇOS --- */
+
+/* Preços gigantes e coloridos por coluna */
+.grid .card:nth-child(1) .price span {
+  color: var(--turquesa) !important;
+}
+.grid .card:nth-child(2) .price span {
+  color: var(--rosa) !important;
+}
+.grid .card:nth-child(3) .price span {
+  color: var(--amarelo) !important;
+}
+
+.price span {
+  font-size: 8rem !important; /* Aumentei ainda mais para dar impacto */
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -5px;
+}
+
+/* Deixar os itens da lista maiores na página de serviços */
+.card ul li {
+  font-size: 1.3rem !important;
+  margin-bottom: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* Estilo do Card Destaque (Elite) */
+.card.highlight {
+  border: 3px solid var(--rosa) !important;
+  background: linear-gradient(145deg, #121212, #050505);
+}
+/* --- EDIÇÃO EXTRA PARA CONTATOS --- */
+
+.form-elite input:focus,
+.form-elite select:focus,
+.form-elite textarea:focus {
+  border-color: var(--amarelo) !important;
+  box-shadow: 0 0 15px var(--amarelo);
+  outline: none;
+  background: #050505 !important;
+}
+
+.contato-info p {
+  margin-bottom: 5px !important;
+}
+
+/* Efeito de brilho nas labels do formulário */
+.form-elite label {
+  letter-spacing: 2px;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Ajuste de tamanho para o botão de envio no mobile */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+  h1 {
+    font-size: 3.5rem !important;
+  }
+}
+/* --- EDIÇÃO EXTRA PARA PÁGINA SOBRE --- */
+
+/* Estilo para os títulos de seção no Sobre */
+.container h2 {
+  margin-bottom: 25px;
+  letter-spacing: -2px;
+}
+
+/* Destaque para o texto de Metodologia */
+.container p b,
+.container p strong {
+  color: var(--turquesa);
+  font-weight: 900;
+}
+
+/* Seção de Impacto Final (Call to Action) */
+section[style*="background: #111"] {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Deixar o H2 da seção final ainda mais massivo */
+section[style*="background: #111"] h2 {
+  font-size: clamp(3rem, 10vw, 6rem) !important;
+  color: var(--branco);
+  text-shadow: 0 0 30px rgba(245, 255, 0, 0.2);
+}
+
+/* Ajuste fino para a grid do Sobre em telas médias */
+@media (min-width: 768px) {
+  .grid {
+    gap: 100px !important; /* Mais espaço entre Missão e Método */
+  }
+}
+
+/* Efeito de hover nos parágrafos do Sobre */
+.container div[data-aos] p:hover {
+  color: var(--branco);
+  transition: 0.3s;
+}
+/* --- EDIÇÃO PARA PÁGINA METODOLOGIA --- */
+.card h3 {
+  font-size: 3rem !important; /* Números 01, 02, 03 gigantes */
+  margin-bottom: 20px;
+  letter-spacing: -2px;
+}
+
+.card p {
+  font-size: 1.2rem !important;
+  font-weight: 500;
+}

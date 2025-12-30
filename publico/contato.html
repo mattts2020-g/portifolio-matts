@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTATO | SMART CONSULT</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">SMART<span>CONSULT</span></div>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/sobre">Sobre</a></li>
+        <li><a href="/servicos">Serviços</a></li>
+        <li><a href="/contato" class="btn-nav">Começar Agora</a></li>
+      </ul>
+    </nav>
+
+    <section class="container" style="padding-top: 180px">
+      <div
+        class="grid"
+        style="
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+          gap: 80px;
+          align-items: start;
+        "
+      >
+        <div data-aos="fade-right">
+          <h4 class="tagline">CONTATO DIRETO</h4>
+          <h1>FALE COM O <span>COACH</span></h1>
+          <p style="margin-bottom: 40px">
+            Dúvidas sobre os protocolos? Mande sua mensagem e nossa equipe de
+            elite responderá em até 24h.
+          </p>
+
+          <div class="contato-info">
+            <h3 style="color: var(--turquesa); margin-bottom: 10px">
+              WHATSAPP
+            </h3>
+            <p
+              style="
+                font-size: 2rem !important;
+                font-weight: 900;
+                color: var(--branco);
+              "
+            >
+              +55 (11) 99999-9999
+            </p>
+
+            <h3
+              style="color: var(--rosa); margin-top: 30px; margin-bottom: 10px"
+            >
+              E-MAIL
+            </h3>
+            <p style="font-size: 1.5rem !important; font-weight: 700">
+              suporte@smartconsult.com
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card"
+          data-aos="fade-left"
+          style="background: #111; border-color: var(--turquesa)"
+        >
+          <form action="#" class="form-elite">
+            <div style="margin-bottom: 25px">
+              <label
+                style="
+                  display: block;
+                  font-weight: 900;
+                  color: var(--turquesa);
+                  margin-bottom: 10px;
+                  text-transform: uppercase;
+                "
+                >Seu Nome</label
+              >
+              <input
+                type="text"
+                placeholder="JOÃO SILVA"
+                style="
+                  width: 100%;
+                  padding: 20px;
+                  background: #000;
+                  border: 2px solid #222;
+                  color: #fff;
+                  font-size: 1.2rem;
+                  font-weight: 700;
+                  border-radius: 8px;
+                "
+              />
+            </div>
+
+            <div style="margin-bottom: 25px">
+              <label
+                style="
+                  display: block;
+                  font-weight: 900;
+                  color: var(--rosa);
+                  margin-bottom: 10px;
+                  text-transform: uppercase;
+                "
+                >Objetivo</label
+              >
+              <select
+                style="
+                  width: 100%;
+                  padding: 20px;
+                  background: #000;
+                  border: 2px solid #222;
+                  color: #fff;
+                  font-size: 1.2rem;
+                  font-weight: 700;
+                  border-radius: 8px;
+                "
+              >
+                <option>HIPERTROFIA ACELERADA</option>
+                <option>DEFINIÇÃO EXTREMA</option>
+                <option>PERFORMANCE ATLETA</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom: 30px">
+              <label
+                style="
+                  display: block;
+                  font-weight: 900;
+                  color: var(--amarelo);
+                  margin-bottom: 10px;
+                  text-transform: uppercase;
+                "
+                >Mensagem</label
+              >
+              <textarea
+                rows="4"
+                placeholder="QUAL O SEU FOCO?"
+                style="
+                  width: 100%;
+                  padding: 20px;
+                  background: #000;
+                  border: 2px solid #222;
+                  color: #fff;
+                  font-size: 1.2rem;
+                  font-weight: 700;
+                  border-radius: 8px;
+                "
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="btn-main"
+              style="
+                width: 100%;
+                background: var(--turquesa);
+                box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
+              "
+            >
+              ENVIAR PROTOCOLO
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      style="
+        margin-top: 100px;
+        padding: 40px;
+        text-align: center;
+        border-top: 1px solid #111;
+      "
+    >
+      <p style="font-size: 1rem !important">SMART CONSULT | 2025</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+    </script>
+  </body>
+</html>
